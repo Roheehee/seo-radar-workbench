@@ -1,0 +1,24 @@
+config.json
+state/
+gsc_token.json
+gsc_client.json
+report.md
+report.json
+sources.md
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+*.egg-info/
+build/
+dist/
+.DS_Store
+
+# Local workbench data and publish artifacts
+reports/
+latest-report.html
+.env.*
+!.env.example
+*.log
+*.zip
+.publish/

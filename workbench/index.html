@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>新词雷达 · SEO 工作台</title><meta name="description" content="从新信号到下一篇内容，你的本地 SEO 选题工作台。"><link rel="stylesheet" href="/style.css"><script src="/intent.js" defer></script><script src="/research.js" defer></script><script src="/research-ui.js" defer></script><script src="/app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+  <a href="#overview" class="brand"><span class="radar-logo"><i></i></span><span>新词雷达<small>NEW TERM RADAR</small></span></a>
+  <div class="workspace-tag">个人工作空间 <span>LOCAL</span></div>
+  <nav aria-label="主导航">
+    <a href="#overview" data-page="overview"><span>◈</span>监测总览</a>
+    <a href="#leads" data-page="leads"><span>⌕</span>线索发现<b id="nav-count">0</b></a>
+    <a href="#research" data-page="research"><span>◎</span>搜索意图研究</a>
+    <a href="#saved" data-page="saved"><span>☆</span>我的选题<b id="saved-count">0</b></a>
+    <a href="#history" data-page="history"><span>▤</span>历史报告</a>
+    <div class="nav-label">管理</div>
+    <a href="#settings" data-page="settings"><span>⚙</span>监测设置</a>
+    <a href="#capabilities" data-page="capabilities"><span>⊞</span>功能与数据源</a>
+  </nav>
+  <div class="sidebar-bottom"><div class="mode-pill">免费采集模式</div><p>发现信号，积累选题。<br>数据保存在这台电脑。</p><span class="muted">v1.0 · 本地工作台</span></div>
+</aside>
+<div class="shell">
+ <header><div class="crumb">工作空间 <span>/</span> <strong id="crumb">监测总览</strong></div><div class="header-right"><span class="local-label">仅本机访问</span><button class="icon-btn" id="refresh" title="刷新数据" aria-label="刷新数据">↻</button></div></header>
+ <main>
+  <div class="heading"><div><p class="eyebrow">YOUR NEXT CONTENT OPPORTUNITY</p><h1 id="page-title">发现值得关注的下一个名字</h1><p id="page-subtitle" class="subtitle">从公开信号中寻找线索，把灵感变成下一篇内容。</p></div><button class="primary" id="run"><span>◉</span> 开始免费采集</button></div>
+  <div id="job-banner" class="job-banner" hidden></div>
+  <section id="overview" class="page"></section>
+  <section id="leads" class="page" hidden></section>
+  <section id="research" class="page" hidden></section>
+  <section id="saved" class="page" hidden></section>
+  <section id="history" class="page" hidden></section>
+  <section id="settings" class="page" hidden></section>
+  <section id="capabilities" class="page" hidden></section>
+  <footer>新词雷达 <span>·</span> 公开数据是选题线索，热度不等于搜索需求。</footer>
+ </main>
+</div>
+<dialog id="detail"><div id="detail-content"></div></dialog>
+<div id="toast" role="status" hidden></div>
+</body></html>
