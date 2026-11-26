@@ -956,7 +956,7 @@ def test_every_manifest_carries_the_same_version():
     assert pinned in plugin["mcpServers"]["new-term-radar"]["args"]
     assert all(pinned in (root / s / "SKILL.md").read_text() for s in copilot["skills"])
     assert len(server["description"]) <= 100                                  # the registry's limit
-    assert f"mcp-name: {server['name']} -->" in (root / "README.md").read_text()   # how the registry checks who owns the PyPI package
+    assert f"mcp-name: {server['name']} -->" in (root / "README.upstream.md").read_text()   # how the registry checks who owns the PyPI package
 
 
 def test_without_a_config_file_the_radar_runs_on_the_example_it_ships_with(tmp_path, monkeypatch, capsys):
